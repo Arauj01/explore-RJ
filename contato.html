@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com o projeto Explore RJ.">
+  <title>Contato | Explore RJ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-mark">✦</span> Explore <span>RJ</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html">Início</a><a href="galeria.html">Galeria</a><a class="active" href="contato.html">Contato</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero contact-hero">
+      <p class="eyebrow">VAMOS CONVERSAR?</p>
+      <h1>Entre em <span>contato.</span></h1>
+      <p>Tem uma sugestão de lugar ou uma ideia para o projeto? Envie sua mensagem.</p>
+    </section>
+    <section class="section contact-layout">
+      <div class="contact-info">
+        <p class="eyebrow">FALE COM A GENTE</p>
+        <h2>O Rio fica ainda melhor quando é <span>compartilhado.</span></h2>
+        <p>Use o formulário para enviar sugestões, dúvidas ou comentários sobre o Explore RJ.</p>
+        <div class="contact-detail"><span class="detail-icon">✉</span><div><strong>Mensagem</strong><p>Preencha o formulário ao lado</p></div></div>
+        <div class="contact-detail"><span class="detail-icon">⌖</span><div><strong>Local do projeto</strong><p>Rio de Janeiro, Brasil</p></div></div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <label for="name">Seu nome</label>
+        <input id="name" name="name" type="text" placeholder="Como podemos te chamar?" required>
+        <label for="email">Seu e-mail</label>
+        <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+        <label for="subject">Assunto</label>
+        <select id="subject" name="subject" required><option value="" disabled selected>Escolha um assunto</option><option>Sugestão de lugar</option><option>Dúvida sobre o projeto</option><option>Outro assunto</option></select>
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+        <button class="button button-primary form-submit" type="submit">Enviar mensagem <span>↗</span></button>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        <p class="form-note">Demonstração escolar: o formulário não envia dados para um servidor.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="logo" href="index.html">✦ Explore <span>RJ</span></a><p>Projeto educacional de desenvolvimento web.</p><p>© <span class="year"></span> Explore RJ</p></footer>
+</body>
+</html>
