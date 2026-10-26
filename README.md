@@ -1,4 +1,4 @@
-# Explore RJ 🌊
+# Explore RJ 
 
 Projeto educacional de desenvolvimento web com tema de turismo no Rio de Janeiro.
 
